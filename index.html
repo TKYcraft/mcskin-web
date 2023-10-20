@@ -3,21 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Minecraft スキン画像取得</title>
+        <title>Minecraft Skin</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div class="container">
-            <h1>Minecraft スキン画像取得</h1>
+            <h1>Minecraft Skin</h1>
             <div class="input-container">
-                <label for="minecraftId">
-                    Minecraft IDを入力してください：
-                </label>
-                <input type="text" id="minecraftId" placeholder="例: Steve" />
+                <label for="minecraftId">Minecraft ID</label>
+                <input
+                    type="text"
+                    id="minecraftId"
+                    placeholder="例: shigure_alicey"
+                />
                 <button onclick="getSkin()">画像を取得</button>
             </div>
             <div class="result-container">
-                <img id="skinImage" alt="スキン画像" />
+                <img
+                    id="skinImage"
+                    alt="スキン画像"
+                    src="https://chisato.alicey.dev/api/v1/texture/face/shigure_alicey.png"
+                />
             </div>
         </div>
         <script src="script.js"></script>

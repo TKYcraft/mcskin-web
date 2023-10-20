@@ -20,7 +20,7 @@ function getSkin() {
             })
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);
-                skinImage.src = ''; // エラー時に画像をクリア
+                skinImage.src = 'https://chisato.alicey.dev/api/v1/texture/face/shigure_alicey.png';
             });
     } else {
         alert("Minecraft IDを入力してください！");
