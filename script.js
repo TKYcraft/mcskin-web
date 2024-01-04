@@ -2,7 +2,7 @@ function getSkin() {
     const minecraftId = document.getElementById("minecraftId").value;
     const skinImage = document.getElementById("skinImage");
     const resultMessage = document.getElementById("resultMessage");
-    
+
     if (minecraftId) {
         const apiUrl = `https://chisato.alicey.dev/api/v1/texture/face/${minecraftId}.png`;
 
@@ -14,7 +14,7 @@ function getSkin() {
                 }
                 throw new Error('Network response was not ok.');
             })
-            .then((blob) => {
+            .then(blob => {
                 // 画像を表示
                 const imgUrl = URL.createObjectURL(blob);
                 skinImage.src = imgUrl;
