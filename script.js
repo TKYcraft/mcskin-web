@@ -5,7 +5,7 @@ function getSkin() {
 
     if (minecraftId) {
         const apiUrl = `https://chisato.alicey.dev/api/v1/texture/face/${minecraftId}.png`;
-        
+
         // APIから画像を取得
         fetch(apiUrl)
             .then(response => {
@@ -27,5 +27,11 @@ function getSkin() {
             });
     } else {
         alert("Minecraft IDを入力してください！");
+    }
+}
+
+function IDTextbox_keydown(e) {
+    if (e.key === "Enter") {
+        getSkin();
     }
 }
